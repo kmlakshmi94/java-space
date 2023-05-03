@@ -1,0 +1,31 @@
+package jarraylist;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class BasicsListImpl {
+	
+	
+	//Java program to create an array list, add some colors (strings) and print out the collection
+	public static void addcolors() {
+		
+		 Scanner scanner = new Scanner(System.in);
+		
+		List<String> colors = new ArrayList<String>();
+		System.out.println("Enter colors::::");
+		for(int i =0; i <5; i++) {
+			String color = scanner.nextLine();
+			colors.add(color);
+		}
+		
+		colors.forEach(System.out::println);
+	}
+	
+	
+	public static void main (String args[]) {
+		
+		BasicsListImpl.addcolors();
+	}
+
+}
